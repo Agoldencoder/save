@@ -1,0 +1,53 @@
+function computerPlay() {const randomNumber = Math.floor(Math.random() * 3)
+if (randomNumber === 0){
+    return 'Rock';
+}
+
+else if (randomNumber === 1) {
+    return 'Paper';
+}
+
+else if (randomNumber === 2) {
+    return 'Scissors' 
+}
+                        }
+
+function playerSelect() {
+const playerSelection = prompt('What do you want your choice to be?')
+alert(computerPlay())
+if (playerSelection == 'rock'  || 'Rock' && computerPlay == 'Scissors') {  
+alert('Good job!, you win');
+
+if (playerSelection == 'rock' || 'Rock'  && computerPlay == 'Paper') {
+alert('You are one sore loser')
+}
+
+if (playerSelection == 'rock' || 'Rock' && computerPlay == 'Rock') {
+alert('WE HAVE A TIE')
+}
+
+if (playerSelection == 'paper' || 'Paper' && computerPlay == 'Paper') {
+alert('WE HAVE A TIE')
+}
+
+if (playerSelection == 'paper' || 'Paper' && computerPlay == 'Rock') {
+alert('Congrats, you won!')
+}
+
+if (playerSelection == 'paper' || 'Paper' && computerPlay == 'Scissors') {
+alert('Idiottt, you lost to a computer?')
+}
+
+if (playerSelection == 'scissors' || 'Scissors' && computerPlay == 'Scissors') {
+alert('Im ashamed of you... a tie?')
+}
+
+if (playerSelection == 'scissors' || 'Scissors' && computerPlay == 'Paper'){
+alert('wooow you won, so cooool')
+}
+
+if (playerSelection == 'scissors' || 'Scissors' && computerPlay == 'Rock') {
+alert('get bonked kid')
+}
+                         }
+}
